@@ -1,10 +1,12 @@
 package gmbh.gensh.dgbrewery.services;
 
 import gmbh.gensh.dgbrewery.web.model.BeerDTO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Slf4j
 @Service
 public class BeerServiceImpl implements BeerService {
 
@@ -21,5 +23,10 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public void updateBeer(UUID beerId, BeerDTO beerDTO) {
         // TODO: implement
+    }
+
+    @Override
+    public void deleteById(UUID beerId) {
+        log.debug("Deleting a beer");
     }
 }
