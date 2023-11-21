@@ -1,9 +1,7 @@
 package gmbh.gensh.dgbrewery.web.controller;
 
 import gmbh.gensh.dgbrewery.services.CustomerService;
-import gmbh.gensh.dgbrewery.web.model.BeerDTO;
 import gmbh.gensh.dgbrewery.web.model.CustomerDTO;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
